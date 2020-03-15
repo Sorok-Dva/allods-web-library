@@ -1,6 +1,7 @@
 {
   "name": "allods-web-library",
   "version": "0.0.01",
+  "description": "A powerful and modern web library for allods online servers",
   "author": "Сорок два",
   "main": "index.js",
   "repository": {
@@ -10,6 +11,14 @@
   "bugs": {
     "url": "https://github.com/Sorok-Dva/allods-web-library/issues"
   },
+  "homepage": "https://github.com/Sorok-Dva/allods-web-library",
+  "keywords": [
+    "allods-web-library",
+    "allods",
+    "allods-server",
+    "allods-api"
+  ],
+  "license": "MIT",
   "dependencies": {
     "dotenv": "^8.2.0",
     "request": "^2.88.2"
