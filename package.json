@@ -1,0 +1,11 @@
+{
+  "name": "allods-web-library",
+  "version": "0.0.1",
+  "private": true,
+  "author": "Сорок два",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "request": "^2.88.2"
+  }
+}
