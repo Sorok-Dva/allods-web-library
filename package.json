@@ -3,6 +3,13 @@
   "version": "0.0.01",
   "author": "Сорок два",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sorok-Dva/allods-web-library"
+  },
+  "bugs": {
+    "url": "https://github.com/Sorok-Dva/allods-web-library/issues"
+  },
   "dependencies": {
     "dotenv": "^8.2.0",
     "request": "^2.88.2"
