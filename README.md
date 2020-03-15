@@ -23,12 +23,6 @@ Account.create({
 let Account = new Account('Username');
 Account.get().then(accountData => accountData);
 ```
-- **POST** - /accountDetails
-```json
-{
-  "userName": "userName"
-}
-```
 - **POST** - /accountStatus
 ```json
 {
@@ -109,7 +103,7 @@ Account.Sanction().delete({
   Account.Sanction().get().then(sanctions => sanctions);
 });
 // {"status":"SUCCESS","reason":"OK"}
-// {"status":"SUCCESS","reason":"OK","sanctions":[{"login":"Username","sanctionType":"Ban","isOn":true,"expireTime":1586965256,"reason":"Sanction Reason","gmName":"Game Master Nickname"}]}
+// {"status":"SUCCESS","reason":"OK","sanctions":[{"login":"Username","sanctionType":"Ban","isOn":false,"expireTime":1586965256,"reason":"Sanction Reason","gmName":"Game Master Nickname"}]}
 ```
 
 ### Collection Editions
