@@ -2,7 +2,7 @@
 
 ## About
 This repository is a rework of the web library of Allods dedicated to all server owners that want a web technology more newest and better than PHP.
-We (@paulus-allods) have also reworks the API Core to change from Hessian Protocol to JSON Rest. This will allows an easiest use of the web library to control your game server.
+We (especially @paulus-allods) have also reworks the API Core in JAVA to change from Hessian Protocol to JSON Rest. This will allows an easiest use of the web library to control your game server.
 
 What you'll be able to do ?
 
@@ -14,7 +14,13 @@ More incoming (BillingServer API, GameTool & LogServer and much more) !
 ## How to start ?
 Start by moving the jar files in the `/jars` folder into your `gameServer/server_bin/jars` (make a backup of those files before just in case).
 Start wanted server, and you can now use this web library to manipulate your game server.
-Now create your `.env` file with servers data variables : 
+
+Install `allods-web-library` package
+```bash
+npm i -s allods-web-library
+```
+
+Now create your `.env` file in your project with servers data variables : 
 (this web library save these data into process.env, using dotenv package.)
 ```dotenv
 ACCOUNT_SERVER_HOST=127.0.0.1
@@ -22,6 +28,25 @@ ACCOUNT_SERVER_PORT=9337
 BILLING_SERVER_HOST=127.0.0.1
 BILLING_SERVER_PORT=9336
 ...
+```
+
+Now you can call API Collection that you want like it : 
+```javascript
+const { Account, Billing, Item, GameTool, LogServer } = require('allods-web-library');
+
+let user = new Account('username');
+...
+```
+You also have access to the `NetworkManager` class of the library that allows you to make your own request to the api servers, useful if you want to create your own JAVA API endpoints or methods.
+```javascript
+const { NetworkManager } = require('allods-web-library');
+
+(async () => {
+  let Request = new NetworkManager('Account');
+
+  Request.changeEndpoint('myOwnEndPoint-getAvatars');
+  let avatars = await Request.get();
+})();
 ```
 
 ## API Collection
