@@ -1,4 +1,4 @@
-# User Registration
+# User Login
 
 Here is an example of implementation of the **allods-web-library** package into a **node.js**/**express.js** app.
 
