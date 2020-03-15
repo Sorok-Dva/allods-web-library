@@ -67,3 +67,6 @@ gen
 
 # Apache2 logs
 /logs/
+
+/sources
+/jars

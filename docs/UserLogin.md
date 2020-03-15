@@ -51,7 +51,7 @@ passport.use(new LocalStrategy({ passReqToCallback: true }, (req, username, pass
       .map(s => s.sanctionType === 'Ban' && s.isOn === true)
       .filter(v => v === true)[0];
     if (isBanned)
-      console.log('Login failed: User is banned');
+      return done(null, false, 'Login failed: User is banned');
     
     let details = await user.get();
     let session = {

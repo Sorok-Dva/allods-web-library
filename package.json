@@ -1,7 +1,6 @@
 {
   "name": "allods-web-library",
-  "version": "0.0.1",
-  "private": true,
+  "version": "0.0.01",
   "author": "Сорок два",
   "main": "index.js",
   "dependencies": {

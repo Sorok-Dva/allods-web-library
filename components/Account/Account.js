@@ -30,6 +30,11 @@ class Account {
     return this.Request.post({ userName: this.userName });
   }
 
+  status() {
+    this.Request.changeEndpoint('accountStatus');
+    return this.Request.post({ userName: this.userName });
+  }
+
   checkPassword(password) {
     this.Request.changeEndpoint('checkPassword');
     return this.Request.post({ userName: this.userName, password });
