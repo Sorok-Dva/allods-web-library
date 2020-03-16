@@ -3,7 +3,7 @@
 [![build](https://badgen.net/travis/Sorok-Dva/allods-web-library)](https://travis-ci.com/github/Sorok-Dva/allods-web-libraryy)
 [![codecov](https://badgen.net/codecov/c/github/Sorok-Dva/allods-web-library/master?icon=codecov)](https://codecov.io/gh/Sorok-Dva/allods-web-library)
 [![npm downloads](https://badgen.net/npm/dm/allods-web-library)](https://www.npmjs.com/package/allods-web-library)
-[![Merged PRs](https://badgen.net/github/merged-prs/Sorok-Dva/allods-web-library)](https://github.com/sequelize/sequelize)
+[![Merged PRs](https://badgen.net/github/merged-prs/Sorok-Dva/allods-web-library)](https://github.com/Sorok-Dva/allods-web-library)
 
 ## About
 This repository is a rework of the web library of Allods dedicated to all server owners that want a web technology more newest and better than PHP.
