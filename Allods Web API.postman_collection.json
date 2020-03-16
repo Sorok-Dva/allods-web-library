@@ -1,0 +1,649 @@
+{
+  "info": {
+    "_postman_id": "36420ddb-bd77-40ec-993c-0a2dff220049",
+    "name": "Allods Web API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Account",
+      "item": [
+        {
+          "name": "createAccount",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"userName\": \"paulus\",\n    \"password\": \"password\",\n    \"accessLevel\": \"Master\",\n    \"accountStatus\": \"Active\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "127.0.0.1:9337/createAccount",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "9337",
+              "path": [
+                "createAccount"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "accountDetails",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"userName\": \"Sorok\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "127.0.0.1:9337/accountDetails",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "9337",
+              "path": [
+                "accountDetails"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "accountInfo",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"userName\": \"Sorok\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "127.0.0.1:9337/accountInfo",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "9337",
+              "path": [
+                "accountInfo"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "accountStatus",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"userName\": \"Sorok\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "127.0.0.1:9337/accountStatus",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "9337",
+              "path": [
+                "accountStatus"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "checkPassword",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"userName\": \"Sorok\",\n\t\"password\": \"42\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "127.0.0.1:9337/checkPassword",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "9337",
+              "path": [
+                "checkPassword"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "accountStatus",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"userName\": \"Sorok\",\n\t\"accountStatus\": \"Active\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "127.0.0.1:9337/accountStatus",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "9337",
+              "path": [
+                "accountStatus"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "maxUsersOnShard",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"shardName\": \"test\",\n\t\"limit\": 25\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "127.0.0.1:9337/maxUsersOnShard",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "9337",
+              "path": [
+                "maxUsersOnShard"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "baseAccessLevel",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"userName\": \"Sorok\",\n\t\"accessLevel\": \"Master\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "127.0.0.1:9337/baseAccessLevel",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "9337",
+              "path": [
+                "baseAccessLevel"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "currentAccessLevel",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"userName\": \"Sorok\",\n\t\"accessLevel\": \"Master\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "127.0.0.1:9337/currentAccessLevel",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "9337",
+              "path": [
+                "currentAccessLevel"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "changePassword",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"userName\": \"Sorok\",\n\t\"password\": \"42\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "127.0.0.1:9337/changePassword",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "9337",
+              "path": [
+                "changePassword"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "protocolProfileBehavior": {}
+    },
+    {
+      "name": "Sanctions",
+      "item": [
+        {
+          "name": "Sanction",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"userName\": \"Sorok\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "127.0.0.1:9337/sanctions",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "9337",
+              "path": [
+                "sanctions"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Sanction",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"userName\": \"Sorok\",\n\t\"sanction\": \"Silence\",\n\t\"reason\": \"test\",\n\t\"gmName\": \"Sorok\",\n\t\"expireTime\": 1586965256\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "127.0.0.1:9337/sanctions",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "9337",
+              "path": [
+                "sanctions"
+              ]
+            },
+            "description": "Sanction type : Ban,\r\n    Silence,\r\n    PlayerTradeBan,\r\n    TotalTradeBan;"
+          },
+          "response": []
+        },
+        {
+          "name": "Sanction",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"userName\": \"Sorok\",\n\t\"sanction\": \"Silence\",\n\t\"reason\": \"reason Unmute\",\n\t\"gmName\": \"Sorok\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "127.0.0.1:9337/sanctions",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "9337",
+              "path": [
+                "sanctions"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "protocolProfileBehavior": {}
+    },
+    {
+      "name": "CollectionEditions",
+      "item": [
+        {
+          "name": "CollectionEditions",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "127.0.0.1:9337/collectionEditions",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "9337",
+              "path": [
+                "collectionEditions"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "AccountCollectionEditions",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"userName\": \"Sorok\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "127.0.0.1:9337/accountCollectionEditions",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "9337",
+              "path": [
+                "accountCollectionEditions"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "AccountCollectionEditions",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"userName\": \"Sorok\",\n\t\"editionResourceId\": 42\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "127.0.0.1:9337/accountCollectionEditions",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "9337",
+              "path": [
+                "accountCollectionEditions"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "AccountCollectionEditions",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"userName\": \"Sorok\",\n\t\"editionResourceId\": 42\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "127.0.0.1:9337/accountCollectionEditions",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "9337",
+              "path": [
+                "accountCollectionEditions"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "protocolProfileBehavior": {}
+    }
+  ],
+  "protocolProfileBehavior": {}
+}
