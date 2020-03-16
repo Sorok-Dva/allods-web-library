@@ -1,6 +1,5 @@
 require('dotenv').config();
-
-const Account = require('./components/Account/Account');
+const { Account } = require('./index');
 
 let account = new Account('Sorok');
 
@@ -24,17 +23,7 @@ account.checkPassword('42').then(async result => {
     console.log('Login failed: User is banned');
 
   let details = await account.get();
-  let session = {
-    username: details.accountName,
-    lastShardName: details.lastShardName,
-    onAccountServer: details.onAccountServer,
-    onShard: details.onShard,
-    access: {
-      base: details.baseAccessLevel,
-      current: details.currentAccessLevel
-    }
-  };
-  console.log(session)
+  console.log(details)
 });
 
 /*account.get()

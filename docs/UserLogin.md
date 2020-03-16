@@ -25,7 +25,7 @@ app.post('/login', function (req, res) {
 });
 ```
 
-If you're using **passport** package for authentication, this is the same way to implement the  allods web library : 
+If you're using **passport** package for authentication, this is the same way to implement the allods web library : 
 
 ```javascript
 const passport = require('passport');
