@@ -1,5 +1,7 @@
 language:
   node_js
 script:
+  - npm install
+after_script:
   - nyc --reporter=lcov --reporter=lcovonly --all -x "./node_modules/" -x "./coverage/" -x "./jars/" mocha
   - bash <(curl -s https://codecov.io/bash) || echo 'Codecov failed to upload'
