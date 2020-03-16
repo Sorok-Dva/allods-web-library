@@ -7,7 +7,7 @@
 
 ## About
 This repository is a rework of the web library of Allods dedicated to all server owners that want a web technology more newest and better than PHP.
-We (especially @paulus-allods) have also reworks the API Core in JAVA to change from Hessian Protocol to JSON Rest. This will allows an easiest use of the web library to control your game server.
+We (especially [@paulus-allods](https://github.com/paulus-allods/)) have also reworks the [API Core in JAVA](https://github.com/paulus-allods/AllodsOnlineAPI) to change from Hessian Protocol to JSON Rest. This will allows an easiest use of the web library to control your game server.
 
 What you'll be able to do ?
 
