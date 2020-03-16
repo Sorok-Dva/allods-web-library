@@ -1,5 +1,3 @@
-'use strict';
-
 const chai = require('chai'),
   expect = chai.expect,
   { NetworkManager } = require('../index'),
