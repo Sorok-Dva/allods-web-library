@@ -1,4 +1,9 @@
 # ALLODS-WEB-LIBRARY
+[![npm version](https://badgen.net/npm/v/allods-web-library)](https://www.npmjs.com/package/allods-web-library)
+[![build](https://badgen.net/travis/Sorok-Dva/allods-web-library)](https://travis-ci.com/github/Sorok-Dva/allods-web-libraryy)
+[![codecov](https://badgen.net/codecov/c/github/Sorok-Dva/allods-web-library/master?icon=codecov)](https://codecov.io/gh/Sorok-Dva/allods-web-library)
+[![npm downloads](https://badgen.net/npm/dm/allods-web-library)](https://www.npmjs.com/package/allods-web-library)
+[![Merged PRs](https://badgen.net/github/merged-prs/Sorok-Dva/allods-web-library)](https://github.com/sequelize/sequelize)
 
 ## About
 This repository is a rework of the web library of Allods dedicated to all server owners that want a web technology more newest and better than PHP.
@@ -10,6 +15,12 @@ What you'll be able to do ?
 - Control Game Server : define maxUsersOnShard limit
 
 More incoming (BillingServer API, GameTool & LogServer and much more) !
+
+## Warning
+This web library should be used only on a localhost environment. You should also close all game API ports.
+If you use it through a public IP or do not close these ports, **EVERYBODY** will be able to use the full API, so be really careful with this.
+
+_(if needed by some server owners, we'll be able to provide a solution that will allows remote connection with gameTool, open a issue for that.)_
 
 ## How to start ?
 Start by moving the jar files in the `/jars` folder into your `gameServer/server_bin/jars` (make a backup of those files before just in case).
