@@ -63,7 +63,7 @@ out
 gen
 
 # Git Metrics
-/.gtm/
+/.gtm
 
 # Apache2 logs
 /logs/
