@@ -13,8 +13,6 @@ class Account {
     if (!AccessLevel[props.accessLevel] || !AccountStatus[props.accountStatus])
       throw new BackError('Wrong AccessLevel or AccountStatus parameter.');
 
-    this.Request.changeEndpoint('createAccount');
-
     let payload = {
       userName: this.userName,
       password: props.password,
@@ -22,42 +20,51 @@ class Account {
       accountStatus: props.accountStatus
     };
 
-    return this.Request.post(payload);
+    return this.Request
+      .changeEndpoint('createAccount')
+      .post(payload);
   }
 
   get() {
-    this.Request.changeEndpoint('accountDetails');
-    return this.Request.post({ userName: this.userName });
+    return this.Request
+      .changeEndpoint('accountDetails')
+      .post({ userName: this.userName });
   }
 
   status() {
-    this.Request.changeEndpoint('accountStatus');
-    return this.Request.post({ userName: this.userName });
+    return this.Request
+      .changeEndpoint('accountStatus')
+      .post({ userName: this.userName });
   }
 
   checkPassword(password) {
-    this.Request.changeEndpoint('checkPassword');
-    return this.Request.post({ userName: this.userName, password });
+    return this.Request
+      .changeEndpoint('checkPassword')
+      .post({ userName: this.userName, password });
   }
 
   changePassword(password) {
-    this.Request.changeEndpoint('changePassword');
-    return this.Request.put({ userName: this.userName, password });
+    return this.Request
+      .changeEndpoint('changePassword')
+      .put({ userName: this.userName, password });
   }
 
   setStatus(accountStatus) {
-    this.Request.changeEndpoint('accountStatus');
-    return this.Request.put({ userName: this.userName, accountStatus });
+    return this.Request
+      .changeEndpoint('accountStatus')
+      .put({ userName: this.userName, accountStatus });
   }
 
   setBaseAccess(accessLevel) {
-    this.Request.changeEndpoint('baseAccessLevel');
-    return this.Request.put({ userName: this.userName, accessLevel });
+    return this.Request
+      .changeEndpoint('baseAccessLevel')
+      .put({ userName: this.userName, accessLevel });
   }
 
   setCurrentAccess(accessLevel) {
-    this.Request.changeEndpoint('currentAccessLevel');
-    return this.Request.put({ userName: this.userName, accessLevel });
+    return this.Request
+      .changeEndpoint('currentAccessLevel')
+      .put({ userName: this.userName, accessLevel });
   }
 
   getAvatars() {

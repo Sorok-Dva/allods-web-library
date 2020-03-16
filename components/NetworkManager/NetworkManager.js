@@ -69,6 +69,7 @@ class NetworkManager {
 
   changeEndpoint(endpoint) {
     this.endpoint = endpoint;
+    return this;
   }
 }
 
