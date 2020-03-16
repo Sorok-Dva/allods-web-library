@@ -1,9 +1,12 @@
 {
   "name": "allods-web-library",
-  "version": "0.0.01",
+  "version": "0.0.0-alpha.1",
   "description": "A powerful and modern web library for allods online servers",
   "author": "Сорок два",
   "main": "index.js",
+  "scripts": {
+    "test": "nyc --reporter=lcov --reporter=lcovonly --all -x \"./node_modules/\" -x \"./coverage/\" -x \"./jars/\" mocha"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Sorok-Dva/allods-web-library"
@@ -22,5 +25,10 @@
   "dependencies": {
     "dotenv": "^8.2.0",
     "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "mocha": "^7.1.0",
+    "chai": "^4.2.0",
+    "nyc": "^15.0.0"
   }
 }
